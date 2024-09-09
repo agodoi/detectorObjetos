@@ -1,4 +1,4 @@
-# Global Solutions 2023 - AI Challenges and Solutions
+# NEXT 2024 - AI Computer and Sensors
 
 ## Detector de objetos usando YOLOv5 e ESP32-CAM
 
