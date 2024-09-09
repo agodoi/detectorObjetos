@@ -15,7 +15,7 @@ Quanto mais exemplos e situações temos do nosso objeto (Ambiente escuro, ângu
     - **/train**
         - nessa pasta você colocará imagens de treino
     - **/val**
-        - nessa pasta vocÊ colocará imagens de validação do seu modelo
+        - nessa pasta você colocará imagens de validação do seu modelo
 - **labels**
     - **/train**
         - labels das imagens de treino
@@ -25,10 +25,15 @@ Quanto mais exemplos e situações temos do nosso objeto (Ambiente escuro, ângu
 ## Passo-02: Busca de fotos
 
 **2.1)** Procure imagens contendo o objeto e salve tudo em uma pasta local no seu PC.
+
 **2.2)** Se possível, renomeie cada arquivo nesse formato: [NOME DO OBJETO]_[NUMERO DO EXEMPLO] (Opcional)
+
 **2.3)** Exemplo: maca_01. Isso vai facilitar na visualização e organização dos arquivos.
+
 **2.4)** Após isso, separe 80% em uma nova pasta chamada train e o resto em uma pasta chamada val
+
 **2.5)** Mova as pastas train e val para uma nova pastas chamada images
+
 **2.6)** Criação dos labels
 
 Agora que temos as imagens separadas, vamos criar os rótulos de cada objeto, para isso, temos que delimitar onde cada objeto está em cada imagem de treino e validação.
@@ -36,10 +41,15 @@ Agora que temos as imagens separadas, vamos criar os rótulos de cada objeto, pa
 ## Passo-03: Site makesense.ai
 
 **3.1)** Entre no site **makesense.ai** e clique em "Get started"
+
 **3.2)** Arraste a pasta de imagens de treino/validacao para o quadrado das imagens. (Você irá precisar fazer esse processo com as duas, uma de cada vez)
+
 **3.3)** Clique em "Object Detection"
+
 **3.4)** No modal de "Create Labels" crie um rótulo para cada tipo de objeto que você irá rotular.
+
 **3.5)** Clique em "Start project"
+
 **3.6)** Crie uma caixa delimitadora retangular para cada objeto em cada imagem. Exemplo: Exemplo label de uma maçã
 
 Importante! Se houver mais de um objeto na foto, crie uma caixa para cada objeto, mesmo que eles sejam do mesmo tipo. Exemplo: Se houver duas maçãs na foto, crie uma caixa para cada maçã, e não uma caixa só para as duas junto.
