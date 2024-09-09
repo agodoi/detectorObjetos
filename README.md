@@ -40,15 +40,17 @@ Agora que temos as imagens separadas, vamos criar os rótulos de cada objeto, pa
 
 ## Passo-03: Site makesense.ai
 
-**3.1)** Entre no site **makesense.ai** e clique em "Get started"
+Observação, pode ser que o site tenha se atualizado e consequentemente, haver alguma pequena alteração das etapas a seguir. Contudo, isso não deve prejudicar o seu avanço.
 
-**3.2)** Arraste a pasta de imagens de treino/validacao para o quadrado das imagens. (Você irá precisar fazer esse processo com as duas, uma de cada vez)
+**3.1)** Entre no site **makesense.ai** e clique em "Get started";
 
-**3.3)** Clique em "Object Detection"
+**3.2)** Arraste a pasta de imagens de treino/validacao para o quadrado das imagens. (Você irá precisar fazer esse processo com as duas, uma de cada vez);
 
-**3.4)** No modal de "Create Labels" crie um rótulo para cada tipo de objeto que você irá rotular.
+**3.3)** Clique em "Object Detection";
 
-**3.5)** Clique em "Start project"
+**3.4)** No modal de "Create Labels" crie um rótulo para cada tipo de objeto que você irá rotular;
+
+**3.5)** Clique em "Start project";
 
 **3.6)** Crie uma caixa delimitadora retangular para cada objeto em cada imagem. Exemplo: Exemplo label de uma maçã.
 
@@ -59,16 +61,21 @@ Agora que temos as imagens separadas, vamos criar os rótulos de cada objeto, pa
 </picture>
 
 
-
-
 Importante! Se houver mais de um objeto na foto, crie uma caixa para cada objeto, mesmo que eles sejam do mesmo tipo. Exemplo: Se houver duas maçãs na foto, crie uma caixa para cada maçã, e não uma caixa só para as duas junto.
 
-Após criar as caixas para todas as imagens, vá em "Actions" e "Export annotations".
-Dentro do modal, selecione "A .zip package containing files in YOLO format". Dentro desse zip estão todos os rótulos para cada imagem.
-Crie uma pasta chamada labels e dentro dela crie uma nova pasta com o tipo de imagem que você estava rotulando (train ou val).
-Extraia o conteúdo do .zip para a pasta que você criou.
-Repita o processo com as imagens de validação/treino. No final, você terá que ter os labels de treino e validação dentro da sua respectiva pasta.
-No final do processo, você terá que ter essa estrutura de arquivos:
+## Passo-04 - Exportando as imagens
+
+**4.1)** Após criar as caixas para todas as imagens, vá em "Actions" e "Export annotations".
+
+**4.2)** Dentro do modal, selecione "A .zip package containing files in YOLO format". Dentro desse zip estão todos os rótulos para cada imagem.
+
+**4.3)** Crie uma pasta chamada labels e dentro dela crie uma nova pasta com o tipo de imagem que você estava rotulando (train ou val).
+
+**4.4)** Extraia o conteúdo do .zip para a pasta que você criou do seu projeto no **Passo-01**;
+
+**4.5)** Repita o processo com as imagens de validação/treino. 
+
+**4.6)** No final, você terá que ter os labels de treino e validação dentro da sua respectiva pasta. No final do processo, você terá que ter essa estrutura de arquivos:
 
 - images/
   - train/
@@ -80,4 +87,6 @@ No final do processo, você terá que ter essa estrutura de arquivos:
     - labels das imagens de treino
   - val/
     - labels das imagens de validação
-Pronto! Agora vamos para o treinamento do nosso modelo
+
+Pronto! Agora vamos para o treinamento do nosso modelo numa próxima etapa. Aguarde as orientações do professor.
+
