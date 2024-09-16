@@ -49,7 +49,7 @@ Agora que temos as imagens separadas, vamos criar os rótulos de cada objeto, pa
 
 Observação, pode ser que o site tenha se atualizado e consequentemente, haver alguma pequena alteração das etapas a seguir. Contudo, isso não deve prejudicar o seu avanço.
 
-**3.1)** Entre no site **makesense.ai** e clique em "Get started";
+**3.1)** Entre no site **[makesense.ai](https://www.makesense.ai/)** e clique em "Get started";
 
 **3.2)** Clique no quadrado **Drop imagens or Click here to select them**, aponte para a sua pasta local **images/train**, dê um ```Ctrl a``` para selecionar todas as imagens ao mesmo tempo, e confirme. (Você precisará repetir esse passo para **images/val**);
 
