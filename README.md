@@ -31,9 +31,9 @@ Vamos organizar no seu Google Drive para permitir o uso em casa e na sala de aul
 
 **2.2)** Se possível, renomeie cada arquivo nesse formato: [NOME DO OBJETO]_[NUMERO DO EXEMPLO] (Opcional)
 
-**2.3)** Exemplo: maca_01. Isso vai facilitar na visualização e organização dos arquivos.
+**2.3)** Exemplo: maca_01 (maçã). Isso vai facilitar na visualização e organização dos arquivos.
 
-**2.4)** Após isso, separe 80% em uma nova pasta chamada train e o resto em uma pasta chamada val
+**2.4)** Após isso, separe 80% em uma nova pasta chamada **train** e o resto em uma pasta chamada **val**
 
 **2.5)** Mova as pastas train e val para uma nova pastas chamada images
 
@@ -90,6 +90,10 @@ Importante! Se houver mais de um objeto na foto, crie uma caixa para cada objeto
     - labels das imagens de treino
   - val/
     - labels das imagens de validação
+
+**4.7)** Guarde essa estrutura de pastas no seu Google Drive, em pasta ou subpasta sem espaços ou caracteres especiais, de preferência, o mais próximo da raiz. Exemplo
+
+```PROJETOS\NEXT\2024\```
 
 Pronto! Agora vamos para o treinamento do nosso modelo numa próxima etapa. Aguarde as orientações do professor.
 
