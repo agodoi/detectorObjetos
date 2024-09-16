@@ -19,7 +19,7 @@ Quanto mais exemplos e situações temos do nosso objeto (Ambiente escuro, ângu
 - **labels**
     - **/train**
         - labels das imagens de treino
-    - **val/**
+    - **/val**
         - labels das imagens de validação
 
 ## Passo-02: Busca de fotos
