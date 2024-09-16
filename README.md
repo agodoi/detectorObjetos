@@ -39,9 +39,9 @@ Vamos organizar no seu Google Drive para permitir o uso em casa e na sala de aul
 
 **2.6)** O resultado será esse:
 
-```images\train```
+```images/train```
 
-```images\val```
+```images/val```
 
 Agora que temos as imagens separadas, vamos criar os rótulos de cada objeto, para isso, temos que delimitar onde cada objeto está em cada imagem de treino e validação.
 
@@ -59,7 +59,7 @@ Observação, pode ser que o site tenha se atualizado e consequentemente, haver 
 
 **3.5)** Clique em **Start project**;
 
-**3.6)** Crie uma caixa delimitadora retangular para cada objeto em cada imagem e à direita da sua tela, escolha o label **telhado**.
+**3.6)** Crie uma caixa delimitadora retangular para cada objeto em cada imagem e à direita da sua tela, escolha o label **telhado**. Na sua seleção da moldura, dê ênfase ao que você está pretendendo reconhecer, que nesse caso, será telhado inundado.
 
 
 <picture>
@@ -74,15 +74,15 @@ Importante! Se houver mais de um objeto na foto, crie uma caixa para cada objeto
 
 **4.1)** Após criar as caixas para todas as imagens, vá em "Actions" e "Export annotations".
 
-**4.2)** Dentro do modal, selecione "A .zip package containing files in YOLO format". Dentro desse zip estão todos os rótulos para cada imagem.
+**4.2)** Selecione **A .zip package containing files in YOLO format**. Dentro desse zip estão todos os rótulos para cada imagem.
 
-**4.3)** Crie uma pasta chamada labels e dentro dela crie uma nova subpasta com o tipo de imagem que você estava rotulando (train ou val).
+**4.3)** Salve esse zip na subpasta **labes/train** que você criou na ETAPA-01.
 
-**4.4)** Extraia o conteúdo do .zip para a subpasta chamada **labels** criada na ETAPA-01 e 
+**4.4)** Descompacte o conteúdo do .zip nessa subpasta e os seus *TXT estarão no **labes/train**.
 
-**4.5)** Repita o processo com as imagens de validação/treino. 
+**4.5)** Repita o processo com as **images/val**.
 
-**4.6)** No final, você terá que ter os labels de treino e validação dentro da sua respectiva pasta. No final do processo, você terá que ter essa estrutura de arquivos:
+**4.6)** No final, você terá que ter os labels de treino e validação dentro da sua respectiva pasta da seguinte forma:
 
 - images/
   - train/
