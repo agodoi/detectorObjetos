@@ -8,7 +8,10 @@ Para treinar o nosso detector, precisamos de um bom número de exemplos de image
 
 Quanto mais exemplos e situações temos do nosso objeto (Ambiente escuro, ângulos, fases de maturação, etc.) melhor nosso modelo vai detectar. Por exemplo, se tivemos apenas exemplos de fotos de perfil de um objeto, ele provavelmente só irá conseguir detectar um objeto se colocarmos ele de perfil e com uma iluminação focada no objeto.
 
-## Passo-01: Organizando em pastas
+## Passo-01: Organizando em pastas no Google Drive
+
+Vamos organizar no seu Google Drive para permitir o uso em casa e na sala de aula. E vamos usar o Colab para treinar o seu modelo.
+
 **1.1)** No seu PC, crie 4 pastas/subpastas da seguinte forma:
 
 - **images**
