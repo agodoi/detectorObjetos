@@ -93,7 +93,7 @@ Importante! Se houver mais de um objeto na foto, crie uma caixa para cada objeto
 
 **4.7)** Guarde essa estrutura de pastas no seu Google Drive, em pasta ou subpasta sem espaços ou caracteres especiais, de preferência, o mais próximo da raiz. Exemplo
 
-```PROJETOS\NEXT\2024\```
+```MEU DRIVE\PROJETOS\NEXT\2024\```
 
 Pronto! Agora vamos para o treinamento do nosso modelo numa próxima etapa. Aguarde as orientações do professor.
 
