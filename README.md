@@ -31,7 +31,7 @@ Vamos organizar no seu Google Drive para permitir o uso em casa e na sala de aul
 
 **2.2)** Renomeie cada arquivo nesse formato: [NOME DO OBJETO]_[NUMERO DO EXEMPLO] (Opcional)
 
-**2.3)** Exemplo: maca_01 (maçã). Isso vai facilitar na visualização e organização dos arquivos.
+**2.3)** Exemplo: telhado_01. Isso vai facilitar na visualização e organização dos arquivos.
 
 **2.4)** Após isso, separe 80% em uma nova pasta chamada **train** e o resto em uma pasta chamada **val**
 
@@ -49,7 +49,7 @@ Agora que temos as imagens separadas, vamos criar os rótulos de cada objeto, pa
 
 Observação, pode ser que o site tenha se atualizado e consequentemente, haver alguma pequena alteração das etapas a seguir. Contudo, isso não deve prejudicar o seu avanço.
 
-**3.1)** Entre no site **[makesense.ai](https://www.makesense.ai/)** e clique em "Get started";
+**3.1)** Entre no site **[makesense.ai](https://www.makesense.ai/)** e clique em **Get started**;
 
 **3.2)** Clique no quadrado **Drop imagens or Click here to select them**, aponte para a sua pasta local **images/train**, dê um ```Ctrl a``` para selecionar todas as imagens ao mesmo tempo, e confirme. (Você precisará repetir esse passo para **images/val**);
 
@@ -68,7 +68,7 @@ Observação, pode ser que o site tenha se atualizado e consequentemente, haver 
 </picture>
 
 
-Importante! Se houver mais de um objeto na foto, crie uma caixa para cada objeto, mesmo que eles sejam do mesmo tipo. Exemplo: Se houver duas maçãs na foto, crie uma caixa para cada maçã, e não uma caixa só para as duas junto.
+Importante! Se houver mais de um objeto na foto, crie uma caixa para cada objeto, mesmo que eles sejam do mesmo tipo. Exemplo: Se houver dois telhados separados na foto, crie uma caixa para o primeiro telhado e outra caixa para o outro telhado, e não uma caixa só para os dois juntos.
 
 ## Passo-04 - Exportando as imagens
 
