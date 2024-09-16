@@ -29,15 +29,19 @@ Vamos organizar no seu Google Drive para permitir o uso em casa e na sala de aul
 
 **2.1)** Procure imagens contendo o objeto e salve tudo em uma pasta local no seu PC.
 
-**2.2)** Se possível, renomeie cada arquivo nesse formato: [NOME DO OBJETO]_[NUMERO DO EXEMPLO] (Opcional)
+**2.2)** Renomeie cada arquivo nesse formato: [NOME DO OBJETO]_[NUMERO DO EXEMPLO] (Opcional)
 
 **2.3)** Exemplo: maca_01 (maçã). Isso vai facilitar na visualização e organização dos arquivos.
 
 **2.4)** Após isso, separe 80% em uma nova pasta chamada **train** e o resto em uma pasta chamada **val**
 
-**2.5)** Mova as pastas train e val para uma nova pastas chamada images
+**2.5)** Mova as pastas train e val para uma nova pastas chamada **images**.
 
-**2.6)** Criação dos labels
+**2.6)** O resultado será esse:
+
+```images\train```
+
+```images\val```
 
 Agora que temos as imagens separadas, vamos criar os rótulos de cada objeto, para isso, temos que delimitar onde cada objeto está em cada imagem de treino e validação.
 
@@ -47,15 +51,15 @@ Observação, pode ser que o site tenha se atualizado e consequentemente, haver 
 
 **3.1)** Entre no site **makesense.ai** e clique em "Get started";
 
-**3.2)** Arraste a pasta de imagens de treino/validacao para o quadrado das imagens. (Você irá precisar fazer esse processo com as duas, uma de cada vez);
+**3.2)** Clique no quadrado **Drop imagens or Click here to select them**, aponte para a sua pasta local **images/train**, dê um ```Ctrl a``` para selecionar todas as imagens ao mesmo tempo, e confirme. (Você precisará repetir esse passo para **images/val**);
 
-**3.3)** Clique em "Object Detection";
+**3.3)** Clique em **Object Detection**;
 
-**3.4)** No modal de "Create Labels" crie um rótulo para cada tipo de objeto que você irá rotular;
+**3.4)** Na tela seguinte, em **Create labels** crie um rótulo que faça sentido para o objeto que você está reconhecendo. Nesse caso, **telhado**.
 
-**3.5)** Clique em "Start project";
+**3.5)** Clique em **Start project**;
 
-**3.6)** Crie uma caixa delimitadora retangular para cada objeto em cada imagem. Exemplo: Exemplo label de uma maçã.
+**3.6)** Crie uma caixa delimitadora retangular para cada objeto em cada imagem e à direita da sua tela, escolha o label **telhado**.
 
 
 <picture>
@@ -72,9 +76,9 @@ Importante! Se houver mais de um objeto na foto, crie uma caixa para cada objeto
 
 **4.2)** Dentro do modal, selecione "A .zip package containing files in YOLO format". Dentro desse zip estão todos os rótulos para cada imagem.
 
-**4.3)** Crie uma pasta chamada labels e dentro dela crie uma nova pasta com o tipo de imagem que você estava rotulando (train ou val).
+**4.3)** Crie uma pasta chamada labels e dentro dela crie uma nova subpasta com o tipo de imagem que você estava rotulando (train ou val).
 
-**4.4)** Extraia o conteúdo do .zip para a pasta que você criou do seu projeto no **Passo-01**;
+**4.4)** Extraia o conteúdo do .zip para a subpasta chamada **labels** criada na ETAPA-01 e 
 
 **4.5)** Repita o processo com as imagens de validação/treino. 
 
