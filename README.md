@@ -16,9 +16,9 @@ Vamos organizar no seu Google Drive para permitir o uso em casa e na sala de aul
 
 - **images**
     - **/train**
-        - nessa pasta você colocará imagens de treino
+        - nessa pasta você colocará 48 imagens de treino
     - **/val**
-        - nessa pasta você colocará imagens de validação do seu modelo
+        - nessa pasta você colocará 12 imagens de validação do seu modelo. No total, você terá 60 fotos.
 - **labels**
     - **/train**
         - labels das imagens de treino
