@@ -78,7 +78,7 @@ Importante! Se houver mais de um objeto na foto, crie uma caixa para cada objeto
 
 **4.3)** Salve esse zip na subpasta **labes/train** que você criou na ETAPA-01.
 
-**4.4)** Descompacte o conteúdo do .zip nessa subpasta e os seus *TXT estarão no **labes/train**.
+**4.4)** Descompacte o conteúdo do .zip nessa subpasta e os seus TXT estarão no **labes/train**.
 
 **4.5)** Repita o processo com as **images/val**.
 
