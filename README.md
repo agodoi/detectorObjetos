@@ -195,43 +195,7 @@ else:
 
 **6.1)** Salve o arquivo **best.pt** que saiu de resultado no **PASSO 5.5** em um local no seu computador, por exemplo, na mesma raiz que você vai salvar o código-fonte abaixo.
 
-**6.2)** Abra um Visual Code e cole esse arquivo Python.
-
-```
-import cv2
-import torch
-import numpy as np
-import urllib
-
-path = f'{latest_run}/weights/best.pt' # (OPCIONAL) TROQUE PELO CAMINHO DO SEU PESO CASO QUEIRA (best.pt que foi gerado no treinamento) ex: yolov5/runs/train/exp9/weights/best.pt
-image_url = 'http://192.168.10.250/cam-hi.jpg' # TROQUE PELO LINK GERADO NO MONITOR SERIAL
-
-model = torch.hub.load('ultralytics/yolov5', 'custom', path, force_reload=True)
-
-print(path)
-
-while True:
-    img_resp=urllib.request.urlopen(url=image_url)
-    imgnp=np.array(bytearray(img_resp.read()),dtype=np.uint8)
-    im = cv2.imdecode(imgnp,-1)
-
-    results = model(im)
-
-    print(results)
-
-    frame = np.squeeze(results.render())
-
-    cv2.imshow('Deteccao', frame)
-
-    key=cv2.waitKey(5)
-
-    if key==ord('q'):
-        break
-
-cv2.destroyAllWindows()
-```
-
-**6.3)** No seu ESP32, deixe o mesmo código-fonte servidor de imagens que usamos frequentemente:
+**6.2)** No seu ESP32, deixe o mesmo código-fonte servidor de imagens que usamos frequentemente:
 
 ```
 #include <WebServer.h>
@@ -332,3 +296,40 @@ void loop()
   //digitalWrite(FLASH_GPIO_NUM,HIGH);
 }
 ```
+
+**6.3)** Abra um Visual Code e cole esse arquivo Python.
+
+```
+import cv2
+import torch
+import numpy as np
+import urllib
+
+path = f'{latest_run}/weights/best.pt' # (OPCIONAL) TROQUE PELO CAMINHO DO SEU PESO CASO QUEIRA (best.pt que foi gerado no treinamento) ex: yolov5/runs/train/exp9/weights/best.pt
+image_url = 'http://192.168.10.250/cam-hi.jpg' # TROQUE PELO LINK GERADO NO MONITOR SERIAL
+
+model = torch.hub.load('ultralytics/yolov5', 'custom', path, force_reload=True)
+
+print(path)
+
+while True:
+    img_resp=urllib.request.urlopen(url=image_url)
+    imgnp=np.array(bytearray(img_resp.read()),dtype=np.uint8)
+    im = cv2.imdecode(imgnp,-1)
+
+    results = model(im)
+
+    print(results)
+
+    frame = np.squeeze(results.render())
+
+    cv2.imshow('Deteccao', frame)
+
+    key=cv2.waitKey(5)
+
+    if key==ord('q'):
+        break
+
+cv2.destroyAllWindows()
+```
+
