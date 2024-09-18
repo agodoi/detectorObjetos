@@ -106,22 +106,38 @@ Pronto! Agora vamos para o treinamento do nosso modelo numa próxima etapa. Agua
 Primeira coisa que você precisa fazer é instanciar um computador mais poderoso no seu Colab.
 
 
-
+**5.1)**
 ```
 from google.colab import drive
 drive.mount('/content/drive')
 ```
 
+**5.2)**
 ```
 ! git clone https://github.com/ultralytics/yolov5.git
 ```
 
+**5.3)**
 ```
 ! pip install -r yolov5/requirements.txt
 ```
 
+**5.4)** Crie um arquivo chamado **telhado.yaml** usando o bloco de notas. E coloque o seguinte conteúdo dentro desse arquivo:
+
 ```
-! cp /content/drive/MyDrive/PROJETOS/DRONE/TRATOR/trator.yaml yolov5/data/
+train: /content/drive/MyDrive/PROJETOS/DRONE/2024/images/train/
+val: /content/drive/MyDrive/PROJETOS/DRONE/2024/images/val/
+
+names: # Defina aqui as labels do seu dataset
+  0: "Telhado"
+  1: "Pessoa"
+  2: "Galhos"
+  # ...
+```
+
+
+```
+! cp /content/drive/MyDrive/PROJETOS/DRONE/2024/telhado.yaml yolov5/data/
 ```
 
 ```
