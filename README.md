@@ -316,17 +316,11 @@ while True:
     img_resp=urllib.request.urlopen(url=image_url)
     imgnp=np.array(bytearray(img_resp.read()),dtype=np.uint8)
     im = cv2.imdecode(imgnp,-1)
-
     results = model(im)
-
     print(results)
-
     frame = np.squeeze(results.render())
-
     cv2.imshow('Deteccao', frame)
-
     key=cv2.waitKey(5)
-
     if key==ord('q'):
         break
 
