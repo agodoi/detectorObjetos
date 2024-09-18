@@ -135,6 +135,7 @@ names: # Defina aqui as labels do seu dataset
   # ...
 ```
 
+Após ter criado o arquivo **telhado.yaml**, arraste-o para a raiz do seu Google Drive
 
 ```
 ! cp /content/drive/MyDrive/PROJETOS/DRONE/2024/telhado.yaml yolov5/data/
