@@ -1,4 +1,4 @@
-# NEXT 2024 - AI Computer and Sensors
+# NEXT 2024 - AI Computer Systems and Sensors
 
 ## Detector de objetos usando YOLOv5 e ESP32-CAM
 
