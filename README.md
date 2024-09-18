@@ -135,14 +135,20 @@ names: # Defina aqui as labels do seu dataset
   # ...
 ```
 
-Após ter criado o arquivo **telhado.yaml**, arraste-o para a raiz do seu Google Drive
+Após ter criado o arquivo **telhado.yaml**, arraste-o para a raiz do seu Google Drive conforme a figura a seguir.
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/detectorObjetos/blob/main/assets/tela_google_01.jpg">
+   <img alt="Tecnologias Módulo 02" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/detectorObjetos/blob/main/assets/tela_google_01.jpg)">
+</picture>
+
 
 ```
 ! cp /content/drive/MyDrive/PROJETOS/DRONE/2024/telhado.yaml yolov5/data/
 ```
 
 ```
-! python yolov5/train.py --data trator.yaml --weights yolov5s.pt --img 640 --epochs 40
+! python yolov5/train.py --data telhado.yaml --weights yolov5s.pt --img 640 --epochs 40
 ```
 
 ```
