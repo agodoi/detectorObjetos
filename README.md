@@ -167,11 +167,9 @@ Após ter criado o arquivo **telhado.yaml**, arraste-o para a raiz do seu Google
         - labels das imagens de validação
 - **test**
 
-**5.7)** Pegue a 1ª imagem da sua pasta **/images/train** e mova-a para **/test**. Agora você ficará com 47 arquivos no seu train. 
+**5.7)** Escolha uma imagem da sua pasta **/images/train** que tenha uma vista superior e de perto de um telhado com água em volta e copie para **/test**. O certo é você encontrar outra imagem na Internet que não tenha sido usada em **train** e **val**, mas para ganhar tempo, vamos reaproveitar uma figura do **train**.
 
-**5.8)** Apague o 1º label da sua pasta **/labels/train** para não dar erro no seu processo de treino, já que você moveu uma foto do seu dataset **train**. 
-
-**5.9)** Atualize o path na frente de ```--source``` com o caminho do seu ```test```. Exemplo: ```--source drive/MyDrive/PROJETOS/DRONE/2024/test/```
+**5.8)** Atualize o path na frente de ```--source``` com o caminho do seu ```test```. Exemplo: ```--source drive/MyDrive/PROJETOS/DRONE/2024/test/```
 
 ```
 import os
