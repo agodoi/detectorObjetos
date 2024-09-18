@@ -155,7 +155,7 @@ Após ter criado o arquivo **telhado.yaml**, arraste-o para a raiz do seu Google
 
 **5.6)** Nessa etapa, você precisa criar uma subpasta chamada ```test```, ficando assim:
 
-**train: /content/drive/MyDrive/PROJETOS/DRONE/2024/test**
+**/content/drive/MyDrive/PROJETOS/DRONE/2024/test**
 
 ```
 import os
