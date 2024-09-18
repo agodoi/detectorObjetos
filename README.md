@@ -101,3 +101,45 @@ Importante! Se houver mais de um objeto na foto, crie uma caixa para cada objeto
 
 Pronto! Agora vamos para o treinamento do nosso modelo numa próxima etapa. Aguarde as orientações do professor.
 
+## Passo-05 - Criando o código no Colab
+
+```
+from google.colab import drive
+drive.mount('/content/drive')
+```
+
+```
+! git clone https://github.com/ultralytics/yolov5.git
+```
+
+```
+! pip install -r yolov5/requirements.txt
+```
+
+```
+! cp /content/drive/MyDrive/PROJETOS/DRONE/TRATOR/trator.yaml yolov5/data/
+```
+
+```
+! python yolov5/train.py --data trator.yaml --weights yolov5s.pt --img 640 --epochs 40
+```
+
+```
+import os
+import subprocess
+
+def get_latest_train_run_folder():
+    subfolders = [f.path for f in os.scandir('yolov5/runs/train') if f.is_dir()]
+    latest_folder = max(subfolders, key=os.path.getctime, default=None)
+    return latest_folder
+
+latest_run = get_latest_train_run_folder()
+result = subprocess.run(f'python yolov5/detect.py --weights {latest_run}/weights/best.pt --img 640 --source tests/ --data yolov5/data/trator.yaml', shell=True, capture_output=True, text=True)
+if latest_run:
+    # COMANDO
+    result = subprocess.run(f'python yolov5/detect.py --weights {latest_run}/weights/best.pt --img 640 --source tests/ --data yolov5/data/trator.yaml', shell=True, capture_output=True, text=True)
+    print(result.stdout)
+    print(result.stderr)
+else:
+    print("Não foi possível encontrar a pasta de treinamento mais recente.")
+```
