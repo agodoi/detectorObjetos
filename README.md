@@ -171,6 +171,8 @@ Após ter criado o arquivo **telhado.yaml**, arraste-o para a raiz do seu Google
 
 **5.8)** Apague o 1º label da sua pasta **/labels/train** para não dar erro no seu processo de treino, já que você moveu uma foto do seu dataset **train**. 
 
+**5.9)** Atualize o path na frente de ```--source``` com o caminho do seu ```test```. Exemplo: ```--source drive/MyDrive/PROJETOS/DRONE/2024/test/```
+
 ```
 import os
 import subprocess
@@ -181,10 +183,10 @@ def get_latest_train_run_folder():
     return latest_folder
 
 latest_run = get_latest_train_run_folder()
-result = subprocess.run(f'python yolov5/detect.py --weights {latest_run}/weights/best.pt --img 640 --source tests/ --data yolov5/data/trator.yaml', shell=True, capture_output=True, text=True)
+result = subprocess.run(f'python yolov5/detect.py --weights {latest_run}/weights/best.pt --img 640 --source drive/MyDrive/PROJETOS/DRONE/2024/test/ --data yolov5/data/telhado.yaml', shell=True, capture_output=True, text=True)
 if latest_run:
     # COMANDO
-    result = subprocess.run(f'python yolov5/detect.py --weights {latest_run}/weights/best.pt --img 640 --source tests/ --data yolov5/data/trator.yaml', shell=True, capture_output=True, text=True)
+    result = subprocess.run(f'python yolov5/detect.py --weights {latest_run}/weights/best.pt --img 640 --source drive/MyDrive/PROJETOS/DRONE/2024/test/ --data yolov5/data/telhado.yaml', shell=True, capture_output=True, text=True)
     print(result.stdout)
     print(result.stderr)
 else:
