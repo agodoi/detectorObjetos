@@ -155,7 +155,21 @@ Após ter criado o arquivo **telhado.yaml**, arraste-o para a raiz do seu Google
 
 **5.6)** Nessa etapa, você precisa criar uma subpasta chamada ```test```, ficando assim:
 
-**/content/drive/MyDrive/PROJETOS/DRONE/2024/test**
+- **images**
+    - **/train**
+        - nessa pasta você colocará 48 imagens de treino
+    - **/val**
+        - nessa pasta você colocará 12 imagens de validação do seu modelo. No total, você terá 60 fotos.
+- **labels**
+    - **/train**
+        - labels das imagens de treino
+    - **/val**
+        - labels das imagens de validação
+- **test**
+
+**5.7)** Pegue a 1ª imagem da sua pasta **/images/train** e mova-a para **/test**. Agora você ficará com 47 arquivos no seu train. 
+
+**5.8)** Apague o 1º label da sua pasta **/labels/train** para não dar erro no seu processo de treino, já que você moveu uma foto do seu dataset **train**. 
 
 ```
 import os
