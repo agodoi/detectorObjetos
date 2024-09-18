@@ -103,6 +103,10 @@ Pronto! Agora vamos para o treinamento do nosso modelo numa próxima etapa. Agua
 
 ## Passo-05 - Criando o código no Colab
 
+Primeira coisa que você precisa fazer é instanciar um computador mais poderoso no seu Colab.
+
+
+
 ```
 from google.colab import drive
 drive.mount('/content/drive')
