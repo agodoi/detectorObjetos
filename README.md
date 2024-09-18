@@ -147,9 +147,15 @@ Após ter criado o arquivo **telhado.yaml**, arraste-o para a raiz do seu Google
 ! cp /content/drive/MyDrive/PROJETOS/DRONE/2024/telhado.yaml yolov5/data/
 ```
 
+**5.5)** Nessa etapa, você fará o treinamento do seu modelo. Você pode mexer na variável ```--epochs``` mudando o número na frente dele. Exemplo, você pode subir o **40** para **60** e analisar os resultados de acurácia do seu modelo.
+
 ```
 ! python yolov5/train.py --data telhado.yaml --weights yolov5s.pt --img 640 --epochs 40
 ```
+
+**5.6)** Nessa etapa, você precisa criar uma subpasta chamada ```test```, ficando assim:
+
+**train: /content/drive/MyDrive/PROJETOS/DRONE/2024/test**
 
 ```
 import os
