@@ -59,7 +59,7 @@ Observação, pode ser que o site tenha se atualizado e consequentemente, haver 
 
 **3.5)** Clique em **Start project**;
 
-**3.6)** Crie uma caixa delimitadora retangular para cada objeto em cada imagem e à direita da sua tela, escolha o label **telhado**. Na sua seleção da moldura, dê ênfase ao que você está pretendendo reconhecer, que nesse caso, será telhado inundado.
+**3.6)** Crie uma caixa delimitadora **retangular** e não polígono (que não funciona) para cada objeto em cada imagem e à direita da sua tela, escolha o label **telhado**. Na sua seleção da moldura, dê ênfase ao que você está pretendendo reconhecer, que nesse caso, será telhado inundado.
 
 
 <picture>
