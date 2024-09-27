@@ -202,9 +202,9 @@ else:
 #include <WiFi.h>
 #include <esp32cam.h>
  
-const char* WIFI_SSID = "SEU SSID";
-const char* WIFI_PASS = "SUA SENHA WIFI";
-bool flashLamp = true;
+const char* WIFI_SSID = "ssid wifi celular"; //celular Apple não funciona, porque ele não tem 2.4GHz
+const char* WIFI_PASS = "senha";
+int8_t nivelBrilho = 100; //esse número indica o brilho do flash. Varia de 0 (desligado) a 255 (brilho máximo). Não use níveis acima de 200 porque vai aquecer o circuito do flash e posteriormente, queimá-lo
 #define FLASH_GPIO_NUM 4
  
 WebServer server(80);
@@ -293,7 +293,7 @@ void  setup(){
 void loop()
 {
   server.handleClient();
-  //digitalWrite(FLASH_GPIO_NUM,HIGH);
+  analogWrite(FLASH_GPIO_NUM,nivelBrilho); //se o esp se conectar no wifi, o flash acende fraquinho para não queimar.
 }
 ```
 
