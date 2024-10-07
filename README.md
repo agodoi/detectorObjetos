@@ -338,6 +338,18 @@ cv2.destroyAllWindows()
 
 **7.3)** Só lembrando que o seu arquivo **best.pt** fica num path parecido como esse: ```yolov5/runs/train/exp9/weights/best.pt``` do seu Google Drive. Esse **exp9** é o número de vezes que você treinou. Portanto, ele vai incrementar a cada treinamento.
 
+**7.4)** Dê o play no seu Visual Studio e caso dê erro nas bibliotecas, significa que você não tem todas as instâncias instaladas. Para cada erro de biblioteca que der, execute o respectivo ```pip install```
+
+```pip install torch torchvision torchaudio```
+
+
+```pip.exe install opencv-contrib-python```
+
+
+```pip.exe install pandas```
+
+```pip install ultralytics --user```
+
 ## Solução de Problemas
 
 Essa seção é para apontar principais falhas e suas soluções. Por enquanto, não houve falhas, mas à medida que forem surgindo, iremos atualizar essa seção.
@@ -356,4 +368,10 @@ Contudo, não custa lembrar de algumas dicas:
 * sample_data (pode ignorar)
 * yolov5: aqui fica o **best.pt**, dentro da pasta **runs/train/exp/weights**
 * yolov5s.pt: esse arquivo contém os pesos pré-treinados do modelo YOLOv5 de tamanho "small" (s). É uma versão compacta do modelo YOLOv5, que oferece um equilíbrio entre velocidade e precisão. Durante o treinamento, esse arquivo é usado como um ponto de partida para treinar o modelo no seu conjunto de dados específico.
+
+**E)** Caso tenha esse erro abaixo, significa que seu ESP32 não está rodando. Para resolver, abra o seu navegador e digite o IP no campo da URL para testar a detecção de imagens.
+
+```urllib.error.URLError: <urlopen error [WinError 10060] Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu>```
 
