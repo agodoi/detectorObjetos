@@ -338,17 +338,9 @@ cv2.destroyAllWindows()
 
 **7.3)** Só lembrando que o seu arquivo **best.pt** fica num path parecido como esse: ```yolov5/runs/train/exp9/weights/best.pt``` do seu Google Drive. Esse **exp9** é o número de vezes que você treinou. Portanto, ele vai incrementar a cada treinamento.
 
-**7.4)** Dê o play no seu Visual Studio e caso dê erro nas bibliotecas, significa que você não tem todas as instâncias instaladas. Para cada erro de biblioteca que der, execute o respectivo ```pip install```
-
-```pip install torch torchvision torchaudio```
+**7.4)** Dê o play no seu Visual Studio e uma tela pop-up do Python vai se abrir com imagens capturadas da sua câmera do ESP32-CAM.
 
 
-```pip.exe install opencv-contrib-python```
-
-
-```pip.exe install pandas```
-
-```pip install ultralytics --user```
 
 ## Solução de Problemas
 
@@ -356,20 +348,31 @@ Essa seção é para apontar principais falhas e suas soluções. Por enquanto, 
 
 Contudo, não custa lembrar de algumas dicas:
 
-**A)** Seu ESP32-CAM tem que estar na mesma rede WiFi que o seu PC. Verifique se ambos estão na mesma rede;
+**A)** Caso dê erro nas bibliotecas, significa que você não tem todas as instâncias instaladas. Para cada erro de biblioteca que der, execute o respectivo ```pip install```:
 
-**B)** WiFi do celular Apple não é compatível com o ESP32;
+**A1)** ```pip install torch torchvision torchaudio```
 
-**C)** WiFi local de empresas possuem proxy que podem impedir o bom funcionamento da rede. Sugiro roteador o WiFi do seu celular;
+**A2)** ```pip.exe install opencv-contrib-python```
 
-**D)** Se você ficou perdido no seu Colab quanto à sua pasta, porque minimizou os path, busque a pasta **content** que é o começo de tudo. Dentro de **content** temos as seguintes subpastas usadas no seu projeto:
+**A3)** ```pip.exe install pandas```
+
+**A4)** ```pip install ultralytics --user```
+
+
+**B)** Seu ESP32-CAM tem que estar na mesma rede WiFi que o seu PC. Verifique se ambos estão na mesma rede;
+
+**C)** WiFi do celular Apple não é compatível com o ESP32;
+
+**D)** WiFi local de empresas possuem proxy que podem impedir o bom funcionamento da rede. Sugiro roteador o WiFi do seu celular;
+
+**E)** Se você ficou perdido no seu Colab quanto à sua pasta, porque minimizou os path, busque a pasta **content** que é o começo de tudo. Dentro de **content** temos as seguintes subpastas usadas no seu projeto:
 
 * drive: aqui fica a sua estrutura de pastas e subpastas do treinamento e teste
 * sample_data (pode ignorar)
 * yolov5: aqui fica o **best.pt**, dentro da pasta **runs/train/exp/weights**
 * yolov5s.pt: esse arquivo contém os pesos pré-treinados do modelo YOLOv5 de tamanho "small" (s). É uma versão compacta do modelo YOLOv5, que oferece um equilíbrio entre velocidade e precisão. Durante o treinamento, esse arquivo é usado como um ponto de partida para treinar o modelo no seu conjunto de dados específico.
 
-**E)** Caso tenha esse erro abaixo, significa que seu ESP32 não está rodando. Para resolver, abra o seu navegador e digite o IP no campo da URL para testar a detecção de imagens.
+**F)** Caso tenha esse erro abaixo, significa que seu ESP32 não está rodando. Para resolver, abra o seu navegador e digite o IP no campo da URL para testar a detecção de imagens.
 
 ```
 urllib.error.URLError: <urlopen error [WinError 10060] Uma tentativa de conexão falhou porque o componente conectado não respondeu
