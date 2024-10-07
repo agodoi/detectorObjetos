@@ -373,7 +373,6 @@ Contudo, não custa lembrar de algumas dicas:
 
 ```
 urllib.error.URLError: <urlopen error [WinError 10060] Uma tentativa de conexão falhou porque o componente conectado não respondeu
-corretamente após um período de tempo ou a conexão estabelecida falhou
-porque o host conectado não respondeu>
+corretamente após um período de tempo ou a conexão estabelecida falhou porque o host conectado não respondeu>
 ```
 
