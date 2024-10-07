@@ -352,8 +352,8 @@ Contudo, não custa lembrar de algumas dicas:
 
 **D)** Se você ficou perdido no seu Colab quanto à sua pasta, porque minimizou os path, busque a pasta **content** que é o começo de tudo. Dentro de **content** temos as seguintes subpastas usadas no seu projeto:
 
-* drive (aqui fica a sua estrutura de pastas e subpastas do treinamento e teste)
-* sample_data
-* yolov5 (aqui fica o best.tp)
-* yolov5s.pt
+* drive: aqui fica a sua estrutura de pastas e subpastas do treinamento e teste
+* sample_data (pode ignorar)
+* yolov5: aqui fica o **best.pt**, dentro da pasta **runs/train/exp/weights**
+* yolov5s.pt: esse arquivo contém os pesos pré-treinados do modelo YOLOv5 de tamanho "small" (s). É uma versão compacta do modelo YOLOv5, que oferece um equilíbrio entre velocidade e precisão. Durante o treinamento, esse arquivo é usado como um ponto de partida para treinar o modelo no seu conjunto de dados específico.
 
