@@ -13,7 +13,7 @@ Quanto mais exemplos e situações temos do nosso objeto (Ambiente escuro, ângu
 
 Vamos organizar no seu Google Drive para permitir o uso em casa e na sala de aula. E vamos usar o Colab para treinar o seu modelo.
 
-**1.1)** No seu PC, crie 4 pastas/subpastas da seguinte forma:
+**1.1)** Nessa primeira etapa, vamos começar organizando pastas no seu PC, mas depois, vamos transferir tudo para o seu **Google Drive** e conectar o Colab nele. Portanto, crie 4 pastas/subpastas no seu PC da seguinte forma:
 
 - **images**
     - **/train**
@@ -60,7 +60,7 @@ Observação, pode ser que o site tenha se atualizado e consequentemente, haver 
 
 **3.5)** Clique em **Start project**;
 
-**3.6)** Crie uma caixa delimitadora **retangular** e não polígono (que não funciona) para cada objeto em cada imagem e à direita da sua tela, escolha o label **telhado**. Na sua seleção da moldura, dê ênfase ao que você está pretendendo reconhecer, que nesse caso, será telhado inundado.
+**3.6)** Crie uma caixa delimitadora **retangular** e **não polígono** (POLÍGONO NÃO FUNCIONA!) para cada objeto em cada imagem e à direita da sua tela, escolha o label **telhado**. Na sua seleção da moldura, dê ênfase ao que você está pretendendo reconhecer, que nesse caso, será telhado inundado.
 
 
 <picture>
@@ -96,7 +96,7 @@ Importante! Se houver mais de um objeto na foto, crie uma caixa para cada objeto
   - val/
     - labels das imagens de validação
 
-**4.7)** Guarde essa estrutura de pastas no seu Google Drive, em pasta ou subpasta sem espaços ou caracteres especiais, de preferência, o mais próximo da raiz. Exemplo
+**4.7)** Copie toda essa estrutura de pastas e subpastas para o seu **Google Drive**, em pasta ou subpasta sem espaços ou caracteres especiais, de preferência, o mais próximo da raiz. Exemplo:
 
 ```MEU DRIVE\PROJETOS\DRONE\2024\```
 
@@ -298,15 +298,23 @@ void loop()
 }
 ```
 
-**6.3)** Abra um Visual Code e cole esse arquivo Python.
+## Passo 07 - Rodando o Modelo no Visual Code
+
+**7.1)** Abra um Visual Code;
+
+**7.2)** Crie um arquivo Python e cole esse código;
 
 ```
 import cv2
 import torch
 import numpy as np
 import urllib
+import pathlib
+from pathlib import Path
 
-path = f'{latest_run}/weights/best.pt' # (OPCIONAL) TROQUE PELO CAMINHO DO SEU PESO CASO QUEIRA (best.pt que foi gerado no treinamento) ex: yolov5/runs/train/exp9/weights/best.pt
+pathlib.PosixPath = pathlib.WindowsPath
+
+path = 'best.pt' # TROQUE PELO CAMINHO DO SEU PESO CASO QUEIRA (best.pt que foi gerado no treinamento) ex: yolov5/runs/train/exp9/weights/best.pt
 image_url = 'http://192.168.10.250/cam-hi.jpg' # TROQUE PELO LINK GERADO NO MONITOR SERIAL
 
 model = torch.hub.load('ultralytics/yolov5', 'custom', path, force_reload=True)
@@ -327,4 +335,18 @@ while True:
 
 cv2.destroyAllWindows()
 ```
+
+**7.3)** Copie o seu arquivo **best.pt** que está **yolov5/runs/train/exp9/weights/best.pt** do seu Google Drive. Esse **exp9** é o número de vezes que você treinou. Portanto, ele vai incrementar.
+
+## Solução de Falhas
+
+Essa seção é para apontar principais falhas e suas soluções. Por enquanto, não houve falhas, mas à medida que forem surgindo, iremos atualizar essa seção.
+
+Contudo, não custa lembrar de algumas dicas:
+
+**A)** Seu ESP32-CAM tem que estar na mesma rede WiFi que o seu PC. Verifique se ambos estão na mesma rede;
+
+**B)** WiFi do celular Apple não é compatível com o ESP32;
+
+**C)** WiFi local de empresas possuem proxy que podem impedir o bom funcionamento da rede. Sugiro roteador o WiFi do seu celular;
 
