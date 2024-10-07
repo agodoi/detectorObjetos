@@ -196,7 +196,7 @@ else:
 
 **6.1)** Salve o arquivo **best.pt** que saiu de resultado no **PASSO 5.5** em um local no seu computador, por exemplo, na mesma raiz que você vai salvar o código-fonte abaixo.
 
-**6.2)** No seu ESP32, deixe o mesmo código-fonte servidor de imagens que usamos frequentemente:
+**6.2)** No Arduino IDE do seu PC, crie um arquivo **.ino** e cole o código-fonte abaixo. Esse código é o mesmo código-fonte servidor de imagens que usamos frequentemente com o seu ESP32-CAM. A pasta que você criou para salvar esse **.ino** deve esar o **best.pt**.
 
 ```
 #include <WebServer.h>
@@ -302,7 +302,7 @@ void loop()
 
 **7.1)** Abra um Visual Code;
 
-**7.2)** Crie um arquivo Python e cole esse código;
+**7.2)** Crie um arquivo Python, cole esse código e salve-o na mesma pasta em que está o **.ino** e o **best.pt**:
 
 ```
 import cv2
@@ -336,9 +336,9 @@ while True:
 cv2.destroyAllWindows()
 ```
 
-**7.3)** Copie o seu arquivo **best.pt** que está **yolov5/runs/train/exp9/weights/best.pt** do seu Google Drive. Esse **exp9** é o número de vezes que você treinou. Portanto, ele vai incrementar.
+**7.3)** Só lembrando que o seu arquivo **best.pt** fica num path parecido como esse: ```yolov5/runs/train/exp9/weights/best.pt``` do seu Google Drive. Esse **exp9** é o número de vezes que você treinou. Portanto, ele vai incrementar a cada treinamento.
 
-## Solução de Falhas
+## Solução de Problemas
 
 Essa seção é para apontar principais falhas e suas soluções. Por enquanto, não houve falhas, mas à medida que forem surgindo, iremos atualizar essa seção.
 
@@ -349,4 +349,11 @@ Contudo, não custa lembrar de algumas dicas:
 **B)** WiFi do celular Apple não é compatível com o ESP32;
 
 **C)** WiFi local de empresas possuem proxy que podem impedir o bom funcionamento da rede. Sugiro roteador o WiFi do seu celular;
+
+**D)** Se você ficou perdido no seu Colab quanto à sua pasta, porque minimizou os path, busque a pasta **content** que é o começo de tudo. Dentro de **content** temos as seguintes subpastas usadas no seu projeto:
+
+    * drive (aqui fica a sua estrutura de pastas e subpastas do treinamento e teste)
+    * sample_data
+    * yolov5 (aqui fica o best.tp)
+    * yolov5s.pt
 
