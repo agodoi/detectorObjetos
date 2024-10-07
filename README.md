@@ -371,7 +371,9 @@ Contudo, não custa lembrar de algumas dicas:
 
 **E)** Caso tenha esse erro abaixo, significa que seu ESP32 não está rodando. Para resolver, abra o seu navegador e digite o IP no campo da URL para testar a detecção de imagens.
 
-```urllib.error.URLError: <urlopen error [WinError 10060] Uma tentativa de conexão falhou porque o componente conectado não respondeu
+```
+urllib.error.URLError: <urlopen error [WinError 10060] Uma tentativa de conexão falhou porque o componente conectado não respondeu
 corretamente após um período de tempo ou a conexão estabelecida falhou
-porque o host conectado não respondeu>```
+porque o host conectado não respondeu>
+```
 
