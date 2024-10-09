@@ -341,7 +341,7 @@ cv2.destroyAllWindows()
 
 **7.4)** Dê o play no seu Visual Studio e uma tela pop-up do Python vai se abrir com imagens capturadas da sua câmera do ESP32-CAM.
 
-# Passo-08 - Enviar o best.pt para o professor
+# Passo 08 - Enviar o best.pt para o professor
 
 **8.1)** Envie o arquivo best.pt via Teams no chat privado do professor até 24/out, 23h59.
 
