@@ -318,6 +318,7 @@ path = 'best.pt' # TROQUE PELO CAMINHO DO SEU PESO CASO QUEIRA (best.pt que foi 
 image_url = 'http://192.168.10.250/cam-hi.jpg' # TROQUE PELO LINK GERADO NO MONITOR SERIAL
 
 model = torch.hub.load('ultralytics/yolov5', 'custom', path, force_reload=True)
+model.conf = 0.6 #essa variável determina a acurácia do seu modelo. Faça testes para encontrar o melhor resultado.
 
 print(path)
 
@@ -339,6 +340,19 @@ cv2.destroyAllWindows()
 **7.3)** Só lembrando que o seu arquivo **best.pt** fica num path parecido como esse: ```yolov5/runs/train/exp9/weights/best.pt``` do seu Google Drive. Esse **exp9** é o número de vezes que você treinou. Portanto, ele vai incrementar a cada treinamento.
 
 **7.4)** Dê o play no seu Visual Studio e uma tela pop-up do Python vai se abrir com imagens capturadas da sua câmera do ESP32-CAM.
+
+# Passo-08 - Enviar o best.pt para o professor
+
+**8.1)** Envie o arquivo best.pt via Teams no chat privado do professor até 24/out, 23h59.
+
+**8.2)** Atenção para alguns limites e detalhes:
+
+* Arquivos de até 1GB foi suportado pelo computador do professor;
+* Grandes modelos não significam grandes acurácias;
+* Pensem em estratégias de luz, ângulos e perspectivas, fotos no escuro e no claro, uso de galhos, destroços, etc;
+* O ESP32-CAM do drone será o mesmo para todos os grupos;
+* Os grupos não vão pilotar o drone no dia do NEXT. Um único piloto atenderá todos os grupos;
+* O grupo terá uma caneta laser para indicar ao piloto quais frames detectar.
 
 
 
