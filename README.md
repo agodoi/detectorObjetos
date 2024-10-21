@@ -342,7 +342,7 @@ cv2.destroyAllWindows()
 
 ## Passo 08 - Enviar o best.pt para o professor
 
-**8.1)** Envie o arquivo best.pt via Teams no chat privado do professor até 24/out, 23h59.
+**8.1)** Envie o arquivo best.pt via Teams no chat privado do professor até 25/out, 23h59.
 
 **8.2)** Atenção para alguns limites e detalhes:
 
