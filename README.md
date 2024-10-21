@@ -132,7 +132,6 @@ val: /content/drive/MyDrive/PROJETOS/DRONE/2024/images/val/
 names: # Defina aqui as labels do seu dataset
   0: "Telhado"
   1: "Pessoa"
-  2: "Galhos"
   # ...
 ```
 
