@@ -194,6 +194,8 @@ else:
     print("Não foi possível encontrar a pasta de treinamento mais recente.")
 ```
 
+**5.10)** Pegue o arquivo chamado **best.pt** que está no seguinte path: **yolov5/runs/train/exp/weights/best.pt**
+
 ## Passo 06 - Gravando o seu ESP32
 
 **6.1)** Salve o arquivo **best.pt** que saiu de resultado no **PASSO 5.5** em um local no seu computador, por exemplo, na mesma raiz que você vai salvar o código-fonte abaixo.
