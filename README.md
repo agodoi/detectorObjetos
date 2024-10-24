@@ -2,7 +2,7 @@
 
 ## Detector de objetos usando YOLOv5 e ESP32-CAM
 
-## Criação do banco de imagens de objetos
+## Criação do banco de imagens de objetos 
 
 
 Para treinar o nosso detector, precisamos de um bom número de exemplos de imagens dos objetos que queremos detectar, para isso, vamos usar imagens da Internet contendo o nosso objeto em questão. A ideia é ter o máximo de tipos de fotos de diversos ângulos do nosso objeto.
