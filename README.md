@@ -144,17 +144,19 @@ Após ter criado o arquivo **telhado.yaml**, arraste-o para a raiz do seu Google
 
 !(FIGURA 1)[https://github.com/agodoi/detectorObjetos/blob/main/assets/tela_google_01.jpg]
 
+
+**5.5)**
 ```
 ! cp /content/drive/MyDrive/PROJETOS/DRONE/2024/telhado.yaml yolov5/data/
 ```
 
-**5.5)** Nessa etapa, você fará o treinamento do seu modelo. Você pode mexer na variável ```--epochs``` mudando o número na frente dele. Exemplo, você pode subir o **40** para **60** e analisar os resultados de acurácia do seu modelo.
+**5.6)** Nessa etapa, você fará o treinamento do seu modelo. Você pode mexer na variável ```--epochs``` mudando o número na frente dele. Exemplo, você pode subir o **40** para **60** e analisar os resultados de acurácia do seu modelo.
 
 ```
 ! python yolov5/train.py --data telhado.yaml --weights yolov5s.pt --img 640 --epochs 40
 ```
 
-**5.6)** Nessa etapa, você precisa criar uma subpasta chamada ```test```, ficando assim:
+**5.7)** Nessa etapa, você precisa criar uma subpasta chamada ```test```, ficando assim:
 
 - **images**
     - **/train**
@@ -168,9 +170,9 @@ Após ter criado o arquivo **telhado.yaml**, arraste-o para a raiz do seu Google
         - labels das imagens de validação
 - **test**
 
-**5.7)** Escolha uma imagem da sua pasta **/images/train** que tenha uma vista superior e de perto de um telhado com água em volta e copie para **/test**. O certo é você encontrar outra imagem na Internet que não tenha sido usada em **train** e **val**, mas para ganhar tempo, vamos reaproveitar uma figura do **train**.
+**5.8)** Escolha uma imagem da sua pasta **/images/train** que tenha uma vista superior e de perto de um telhado com água em volta e copie para **/test**. O certo é você encontrar outra imagem na Internet que não tenha sido usada em **train** e **val**, mas para ganhar tempo, vamos reaproveitar uma figura do **train**.
 
-**5.8)** Atualize o path na frente de ```--source``` com o caminho do seu ```test```. Exemplo: ```--source drive/MyDrive/PROJETOS/DRONE/2024/test/```
+**5.9)** Atualize o path na frente de ```--source``` com o caminho do seu ```test```. Exemplo: ```--source drive/MyDrive/PROJETOS/DRONE/2024/test/```
 
 ```
 import os
