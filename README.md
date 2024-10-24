@@ -131,8 +131,8 @@ Observação: mantenha essa raiz **/content/drive/MyDrive/** e mantenha o final 
 Exemplo: **/content/drive/MyDrive/FIAP_NEXT/TESTE** e manter o **/images/train/** e depois o **/images/val/**
 
 ```
-train: /content/drive/MyDrive/PROJETOS/DRONE/2024/images/train/
-val: /content/drive/MyDrive/PROJETOS/DRONE/2024/images/val/
+train: /content/drive/MyDrive/FIAP/FIAP_NEXT/TESTE/images/train/
+val: /content/drive/MyDrive/FIAP/FIAP_NEXT/TESTE/images/val/
 
 names: # Defina aqui as labels do seu dataset
   0: "Telhado"
@@ -142,11 +142,7 @@ names: # Defina aqui as labels do seu dataset
 
 Após ter criado o arquivo **telhado.yaml**, arraste-o para a raiz do seu Google Drive conforme a figura a seguir.
 
-<picture>
-   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/detectorObjetos/blob/main/assets/tela_google_01.jpg">
-   <img alt="Tecnologias Módulo 02" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/detectorObjetos/blob/main/assets/tela_google_01.jpg)">
-</picture>
-
+!(FIGURA 1)[https://github.com/agodoi/detectorObjetos/blob/main/assets/tela_google_01.jpg]
 
 ```
 ! cp /content/drive/MyDrive/PROJETOS/DRONE/2024/telhado.yaml yolov5/data/
