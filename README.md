@@ -126,6 +126,10 @@ drive.mount('/content/drive')
 
 **5.4)** Crie um arquivo chamado **telhado.yaml** usando o bloco de notas. E coloque o seguinte conteúdo dentro desse arquivo:
 
+Observação: mantenha essa raiz **/content/drive/MyDrive/** e mantenha o final **/images/train/** e atualize o meio da raiz apontando para as pastas e subpastas do seu drive. 
+
+Exemplo: **/content/drive/MyDrive/FIAP_NEXT/TESTE** e manter o **/images/train/** e depois o **/images/val/**
+
 ```
 train: /content/drive/MyDrive/PROJETOS/DRONE/2024/images/train/
 val: /content/drive/MyDrive/PROJETOS/DRONE/2024/images/val/
