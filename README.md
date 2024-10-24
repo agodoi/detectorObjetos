@@ -71,7 +71,7 @@ Observação, pode ser que o site tenha se atualizado e consequentemente, haver 
 
 Importante! Se houver mais de um objeto na foto, crie uma caixa para cada objeto, mesmo que eles sejam do mesmo tipo. Exemplo: Se houver dois telhados separados na foto, crie uma caixa para o primeiro telhado e outra caixa para o outro telhado, e não uma caixa só para os dois juntos.
 
-## Passo-04: Exportando as imagens
+## Passo 04: Exportando as imagens
 
 **4.1)** Após criar as caixas para todas as imagens, vá em "Actions" e "Export annotations".
 
