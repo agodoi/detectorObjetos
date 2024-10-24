@@ -9,7 +9,7 @@ Para treinar o nosso detector, precisamos de um bom número de exemplos de image
 
 Quanto mais exemplos e situações temos do nosso objeto (Ambiente escuro, ângulos, fases de maturação, etc.) melhor nosso modelo vai detectar. Por exemplo, se tivemos apenas exemplos de fotos de perfil de um objeto, ele provavelmente só irá conseguir detectar um objeto se colocarmos ele de perfil e com uma iluminação focada no objeto.
 
-## Passo-01: Organizando em pastas no Google Drive
+## Passo 01: Organizando em pastas no Google Drive
 
 Vamos organizar no seu Google Drive para permitir o uso em casa e na sala de aula. E vamos usar o Colab para treinar o seu modelo.
 
@@ -26,7 +26,7 @@ Vamos organizar no seu Google Drive para permitir o uso em casa e na sala de aul
     - **/val**
         - labels das imagens de validação
 
-## Passo-02: Busca de fotos
+## Passo 02: Busca de fotos
 
 **2.1)** Procure imagens contendo o objeto e salve tudo em uma pasta local no seu PC.
 
@@ -46,7 +46,7 @@ Vamos organizar no seu Google Drive para permitir o uso em casa e na sala de aul
 
 Agora que temos as imagens separadas, vamos criar os rótulos de cada objeto, para isso, temos que delimitar onde cada objeto está em cada imagem de treino e validação.
 
-## Passo-03: Site makesense.ai
+## Passo 03: Site makesense.ai
 
 Observação, pode ser que o site tenha se atualizado e consequentemente, haver alguma pequena alteração das etapas a seguir. Contudo, isso não deve prejudicar o seu avanço.
 
@@ -71,7 +71,7 @@ Observação, pode ser que o site tenha se atualizado e consequentemente, haver 
 
 Importante! Se houver mais de um objeto na foto, crie uma caixa para cada objeto, mesmo que eles sejam do mesmo tipo. Exemplo: Se houver dois telhados separados na foto, crie uma caixa para o primeiro telhado e outra caixa para o outro telhado, e não uma caixa só para os dois juntos.
 
-## Passo-04 - Exportando as imagens
+## Passo-04: Exportando as imagens
 
 **4.1)** Após criar as caixas para todas as imagens, vá em "Actions" e "Export annotations".
 
@@ -102,7 +102,7 @@ Importante! Se houver mais de um objeto na foto, crie uma caixa para cada objeto
 
 Pronto! Agora vamos para o treinamento do nosso modelo numa próxima etapa. Aguarde as orientações do professor.
 
-## Passo-05 - Criando o código no Colab
+## Passo 05: Criando o código no Colab
 
 Primeira coisa que você precisa fazer é instanciar um computador mais poderoso no seu Colab. Instancie um T4 GPU, clicando em **Alterar Tipo de Ambiente de Execução**.
 Para instanciar um computador mais poderoso, primeiro rode o item (5.1), busque por RAM DISCO que fica no canto direito superior, expanda a setinha e escolha **ALTERAR TEMPO E TIPO DE CONEXÃO** ou **ALTERAR O TIPO DE AMBIENTE DE EXECUÇÃO**.
@@ -196,7 +196,7 @@ else:
 
 **5.10)** Pegue o arquivo chamado **best.pt** que está no seguinte path: **yolov5/runs/train/exp/weights/best.pt**
 
-## Passo 06 - Gravando o seu ESP32
+## Passo 06: Gravando o seu ESP32
 
 **6.1)** Salve o arquivo **best.pt** que saiu de resultado no **PASSO 5.5** em um local no seu computador, por exemplo, na mesma raiz que você vai salvar o código-fonte abaixo.
 
