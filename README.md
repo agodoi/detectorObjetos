@@ -56,9 +56,9 @@ Observação, pode ser que o site tenha se atualizado e consequentemente, haver 
 
 **3.3)** Clique em **Object Detection**;
 
-**3.4)** Na tela seguinte, em **Create labels** crie um rótulo que faça sentido para o objeto que você está reconhecendo. Nesse caso, **telhado**.
+**3.4)** Clique em **Start project**;
 
-**3.5)** Clique em **Start project**;
+**3.5)** Na tela seguinte, em **Create labels** crie um rótulo que faça sentido para o objeto que você está reconhecendo. Nesse caso, **telhado**.
 
 **3.6)** Crie uma caixa delimitadora **retangular** e **não polígono** (POLÍGONO NÃO FUNCIONA!) para cada objeto em cada imagem e à direita da sua tela, escolha o label **telhado**. Na sua seleção da moldura, dê ênfase ao que você está pretendendo reconhecer, que nesse caso, será telhado inundado.
 
