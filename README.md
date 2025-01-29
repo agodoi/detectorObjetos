@@ -5,9 +5,11 @@
 ## Criação do banco de imagens de objetos 
 
 
-Para treinar o nosso detector, precisamos de um bom número de exemplos de imagens dos objetos que queremos detectar, para isso, vamos usar imagens da Internet contendo o nosso objeto em questão. A ideia é ter o máximo de tipos de fotos de diversos ângulos do nosso objeto.
+O primeiro passo para treinar o nosso detector é coletarmos imagens do objeto que será reconhecido.
 
-Quanto mais exemplos e situações temos do nosso objeto (Ambiente escuro, ângulos, fases de maturação, etc.) melhor nosso modelo vai detectar. Por exemplo, se tivemos apenas exemplos de fotos de perfil de um objeto, ele provavelmente só irá conseguir detectar um objeto se colocarmos ele de perfil e com uma iluminação focada no objeto.
+Precisamos de um bom número de exemplos de imagens do(s) objeto(s) que queremos detectar, e para isso, vamos usar imagens da Internet contendo o nosso objeto em questão. A ideia é ter o máximo de fotos de diversos ângulos do nosso objeto.
+
+Quanto mais exemplos e situações tivermos do nosso objeto (ambiente escuro, ângulos, fases de maturação, etc.) melhor para o nosso modelo detectar com precisão. Por exemplo, se tivemos apenas exemplos de fotos de perfil de um objeto, ele provavelmente só irá conseguir detectar o objeto se o colocarmos de perfil e com uma iluminação focada no objeto.
 
 ## Passo 01: Organizando em pastas no Google Drive
 
